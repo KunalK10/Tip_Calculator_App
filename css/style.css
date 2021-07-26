@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background: #C5E4E7;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 350px;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1rem;
+}
+
+.input-section {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+
+.label {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 1rem;
+    color: hsl(186, 14%, 43%);
+}
+
+.icon-field .icon {
+    position: absolute;
+}
+
+.icon {
+    min-width: 12px;
+    padding: 18px 15px 15px 15px;
+}
+
+.icon-field .bill-input {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    color:hsl(183, 100%, 15%);
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    background: hsl(189, 41%, 97%);
+    text-align: right;
+    padding-right: 5%;    
+}
+
+.icon-field input {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    color:hsl(183, 100%, 15%);
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    background: hsl(189, 41%, 97%);
+    text-align: right;
+    padding-right: 5%;
+}
+
+.select-tip p {
+    margin-top: 1rem;
+}
+
+.btn-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+.btn-wrapper .btn {
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn-wrapper .btn:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.btn-wrapper .btn:active {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.btn-wrapper .btn-active {
+    background-color: hsl(172, 67%, 45%) ;
+}
+
+.result-section {
+    padding: 1% 1% 1% 8% ;
+}
+
+.display-section {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 2%;
+    padding: 30px 25px 0px 30px;
+    height: 310px;
+}
+
+.main {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.main .bill {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    color: hsl(172, 67%, 45%);
+}
+
+.bill .price {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.bill .img {
+    width: 1rem;
+    height: 1.3rem;
+    margin-right: 0.4rem;
+    font-weight: 700;
+}
+
+.main .head {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: hsl(189, 41%, 97%);
+}
+
+.main .head span {
+    font-size: 0.8rem;
+    color: hsl(184, 14%, 56%);
+}
+
+.tip-amount {
+    margin-top: 8px;
+}
+
+.reset {
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 10px;
+}
+
+.calculate {
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 55px;
+}
+
+.number-of-people {
+    position: relative;
+}
+
+#error {
+    display: none;
+    position: absolute;
+    font-family: 'Space Mono', monospace;
+    top: 2px;
+    right: 0;
+    color: red;
+    font-size: 0.8rem;
+}
+
+
+.icon-field .bill-input:focus {
+    border: 0.1rem solid hsl(172, 67%, 45%)
+}
+
+.icon-field #peopleamt:focus {
+    border: 0.1rem solid hsl(172, 67%, 45%)
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.logo-img {
+    margin-top: 70px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        margin-top: 40%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .logo-img {
+        margin-top: 40px;
+    }
+    .input-section {
+        padding: 8%
+    }
+    .icon-field .bill-input {
+        padding-right: 0%;
+        margin-right: 10px;
+    }
+    .icon-field input {
+        padding-right: 0%;
+    }
+    .result-section {
+        padding: 3% 8% 8% 8%;
+    }
+
+}
