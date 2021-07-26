@@ -238,7 +238,7 @@ body {
 
 @media screen and (max-width: 400px){
     .container {
-        height: 650px;
+        height: 100%;
         width: 100%;
         display: grid;
         margin-top: 40%;
