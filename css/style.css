@@ -238,10 +238,10 @@ body {
 
 @media screen and (max-width: 400px){
     .container {
-        height: 700px;
+        height: 100%;
         width: 100%;
         display: grid;
-        margin-top: 40%;
+        margin-top: 50%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
     }
