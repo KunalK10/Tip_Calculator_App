@@ -241,7 +241,7 @@ body {
         height: 100%;
         width: 100%;
         display: grid;
-        margin-top: 50%;
+        margin-top: 40%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
     }
